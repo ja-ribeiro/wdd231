@@ -1,0 +1,29 @@
+@media (min-width: 768px) {
+
+  #menuBtn {
+    display: none;
+  }
+
+  nav {
+    display: flex !important;
+    justify-content: center;
+  }
+
+  nav a {
+    border: none;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+
+  .courses {
+    grid-column: span 2;
+  }
+
+  #courseContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
