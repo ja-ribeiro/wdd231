@@ -1,0 +1,33 @@
+@media (min-width: 768px) {
+
+  /* MENU HORIZONTAL */
+  nav {
+    flex-direction: row;
+  }
+
+  nav a {
+    border: none;
+    padding: 0.5rem 1rem;
+  }
+
+  /* ABOUT + PHOTO */
+  .top-sections {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+
+  /* BOTÕES GRANDES */
+  .filters {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  #courseContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+}

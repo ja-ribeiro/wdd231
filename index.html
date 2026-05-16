@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Course Home Page WDD231">
+  <meta name="description" content="WDD231 Home Page">
   <meta name="author" content="Juliana Ribeiro">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,43 +15,49 @@
   <script src="scripts/date.js" defer></script>
   <script src="scripts/course.js" defer></script>
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
-  <div class="header-top">
-    <span class="logo">⚡</span>
-    <span class="name">Juliana Ribeiro</span>
 
-    <button id="menuBtn">☰</button>
+  <!-- LINHA DE CIMA -->
+  <div class="top-header">
+    <span class="logo">✖</span>
+    <span class="site-name">Site Name</span>
   </div>
 
+  <!-- LINHA DE BAIXO (MENU) -->
   <nav id="navMenu">
     <a href="#">Home</a>
     <a href="#">Chamber Project</a>
     <a href="#">Final Project</a>
   </nav>
+
 </header>
 
 <main>
+
   <h1>Home</h1>
 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>
-      Massa facilisis per purus sit imperdiet curae amet. 
-      Et fames lorem in phasellus congue nascetur enim consectetur sociosqu natoque risus.
-    </p>
-  </section>
+  <div class="top-sections">
 
-  <section class="photo">
-    <h2>Student Photo</h2>
-    <div class="img-box"></div>
-  </section>
+    <section>
+      <h2>About Me</h2>
+      <p>
+       I am currently studying web development and building my skills in HTML, CSS, and JavaScript. I enjoy learning how to create responsive and user-friendly websites, and I am constantly working to improve both my technical and creative abilities.
+      </p>
+    </section>
 
+    <section>
+        <h2>Student Photo</h2>
+        <img src="images/profile.jpg" alt="Foto de Juliana Ribeiro" class="student-photo">
+    </section>
+
+  </div>
+
+  <!-- COURSES -->
   <section class="courses">
     <h2>Web Certificate Courses</h2>
 
@@ -65,20 +71,33 @@
 
     <p id="totalCredits"></p>
   </section>
+
 </main>
 
 <footer>
-  <div class="social">
-    <a href="#">LinkedIn</a>
-    <a href="#">GitHub</a>
-    <a href="#">X</a>
-  </div>
+
+    <div class="social">
+
+    <a href="https://linkedin.com" target="_blank">
+        <img src="images/linkedin.png" alt="LinkedIn">
+    </a>
+
+    <a href="https://github.com" target="_blank">
+        <img src="images/github.png" alt="GitHub">
+    </a>
+
+    <a href="https://x.com" target="_blank">
+        <img src="images/x.png" alt="X (Twitter)">
+    </a>
+
+    </div>
 
   <p>
-    © <span id="currentyear"></span> | Juliana Ribeiro | Brazil
+    ©<span id="currentyear"></span> · Juliana Alves Ribeiro · Sao Paulo, Brazil
   </p>
 
   <p id="lastModified"></p>
+
 </footer>
 
 </body>
