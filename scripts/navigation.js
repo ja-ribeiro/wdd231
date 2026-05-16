@@ -1,6 +1,7 @@
 const menuBtn = document.getElementById("menuBtn");
-const navMenu = document.getElementById("navMenu");
 
-menuBtn.addEventListener("click", () => {
-  navMenu.classList.toggle("open");
-});
+if (menuBtn) {
+  menuBtn.addEventListener("click", () => {
+    document.getElementById("navMenu").classList.toggle("open");
+  });
+}
