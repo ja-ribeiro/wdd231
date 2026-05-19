@@ -39,6 +39,23 @@ nav a {
   border-top: 1px solid #444;
 }
 
+/* link ativo */
+nav a.active {
+  background: white;
+  color: black;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background: #555;
+}
+
+nav a.active {
+  background: white;
+  color: black;
+  font-weight: bold;
+}
+
 /* MAIN */
 main {
   padding: 1rem;
