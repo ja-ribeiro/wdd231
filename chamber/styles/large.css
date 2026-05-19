@@ -1,0 +1,16 @@
+@media (min-width: 768px) {
+
+  #members.grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #members.list .card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card img {
+    max-width: 80px;
+  }
+}
