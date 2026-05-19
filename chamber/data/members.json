@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Tech Paulista",
+    "address": "Av. Paulista, 1000",
+    "phone": "(11) 4000-1000",
+    "website": "https://techpaulista.com",
+    "image": "company1.png",
+    "membership": 3,
+    "description": "Technology solutions company"
+  },
+  {
+    "name": "Café São Paulo",
+    "address": "Centro, 200",
+    "phone": "(11) 4000-2000",
+    "website": "https://cafesp.com",
+    "image": "company2.png",
+    "membership": 1,
+    "description": "Local coffee shop"
+  },
+  {
+    "name": "SP Marketing",
+    "address": "Faria Lima, 300",
+    "phone": "(11) 4000-3000",
+    "website": "https://spmarketing.com",
+    "image": "company3.png",
+    "membership": 2,
+    "description": "Marketing agency"
+  },
+  {
+    "name": "Construtora SP",
+    "address": "Bela Cintra, 400",
+    "phone": "(11) 4000-4000",
+    "website": "https://construtorasp.com",
+    "image": "company4.png",
+    "membership": 3,
+    "description": "Construction company"
+  },
+  {
+    "name": "Academia Ativa",
+    "address": "Rebouças, 500",
+    "phone": "(11) 4000-5000",
+    "website": "https://ativa.com",
+    "image": "company5.png",
+    "membership": 2,
+    "description": "Fitness center"
+  },
+  {
+    "name": "Loja Fashion SP",
+    "address": "Shopping Morumbi",
+    "phone": "(11) 4000-6000",
+    "website": "https://fashion.com",
+    "image": "company6.png",
+    "membership": 1,
+    "description": "Clothing store"
+  },
+  {
+    "name": "Logística Brasil",
+    "address": "Marginal Tietê",
+    "phone": "(11) 4000-7000",
+    "website": "https://logistica.com",
+    "image": "company7.png",
+    "membership": 3,
+    "description": "Transport company"
+  }
+]
