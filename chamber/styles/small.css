@@ -1,12 +1,15 @@
 body {
-  margin: 0;
-  font-family: Arial;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
 }
 
 /* HEADER */
 .header-container {
   display: flex;
-  align-items: center;
+  align-items:center;
   justify-content: flex-start;
   gap: 2rem;
   background: #0B3C5D;
@@ -15,7 +18,7 @@ body {
 }
 
 /* LOGO */
-.logo {
+.favicon {
   width: 40px;
 }
 
@@ -48,10 +51,6 @@ header h1 {
 .nav-menu a.active {
   background-color: #D72638;
   color: white;
-}
-
-.logo {
-  width: 40px;
 }
 
 nav ul {
