@@ -8,3 +8,18 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+@media (min-width: 768px) {
+
+  .join-page {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+
+  .cards {
+    position: sticky;
+    top: 1rem;
+  }
+
+}
