@@ -49,7 +49,7 @@ header h1 {
 
 /* ACTIVE (página atual) */
 .nav-menu a.active {
-  background-color: #D72638;
+  background-color: #70000b;
   color: white;
 }
 
