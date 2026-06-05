@@ -192,3 +192,28 @@ input[type="submit"]:hover {
     transform: translateY(0);
   }
 }
+
+/* =========================
+   THANK YOU PAGE
+========================= */
+
+.thankyou {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.thankyou-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.thankyou-card h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}

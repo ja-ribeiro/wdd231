@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Thank You</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Thank You Page - WDD231, Juliana Alves Ribeiro</title>
+    <meta name="description" content="Message that will display after the person subit their application on the join page">
+    <meta name="author" content="Juliana Alves Ribeiro">  
 
-<link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css"
 </head>
 
 <body>
 
 <header>
-  <h1>Thank You!</h1>
+  <div class="header-container">
+    
+    <img src="images/favicon.ico" alt="favicon" class="favicon">
+
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" class="active">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+
+  </div>
 </header>
 
 <main style="padding:1rem">
+
+<h1>THANK YOU!</h1>
 
 <h2>Your Application Details</h2>
 
@@ -32,6 +51,46 @@ document.getElementById("results").innerHTML = `
 <p><strong>Organization:</strong> ${params.get("organization")}</p>
 <p><strong>Date:</strong> ${params.get("timestamp")}</p>
 `;
+</script>
+
+<footer>
+  <div class="footer-container">
+
+    <div>
+      <h3>São Paulo Chamber of Commerce</h3>
+      <p>Av. Paulista, São Paulo</p>
+      <p>Email: contato@spcc.org</p>
+      <p>Phone: (11) 99999-9999</p>
+    </div>
+
+    <div class="social">
+
+    <a href="https://youtube.com" target="_blank">
+        <img src="images/youtube.png" alt="YouTube">
+    </a>
+
+    <a href="https://x.com" target="_blank">
+        <img src="images/twitter.png" alt="X (Twitter)">
+    </a>
+
+    <a href="https://linkedin.com" target="_blank">
+        <img src="images/linkedin.png" alt="LinkedIn">
+    </a>
+
+    </div>
+
+    <div>
+      <p>WDD231 Class Project</p>
+      <p>São Paulo Chamber of Commerce</p>
+      <p>© <span id="year"></span></p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+document.getElementById("lastModified").textContent = document.lastModified;
 </script>
 
 </body>
