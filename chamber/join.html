@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber Directory Page - WDD231, Juliana Alves Ribeiro</title>
-    <meta name="description" content="In this page it will contain the chamber directory page of chamber of commerce project">
+    <title>Chamber Join Page - WDD231, Juliana Alves Ribeiro</title>
+    <meta name="description" content="In this page you are able to choose a option to join in the chamber of commerce Sao Paulo">
     <meta name="author" content="Juliana Alves Ribeiro">  
 
      <!-- Facebook Open Graph -->
@@ -48,114 +48,146 @@
 
 <main class="join-page">
 
-  <!-- FORM -->
-  <section>
-    <form method="get" action="thankyou.html">
+<section class="form-section">
 
-      <label>
-        First Name
-        <input type="text" name="firstName" required autocomplete="given-name">
-      </label>
+<form method="get" action="thankyou.html">
 
-      <label>
-        Last Name
-        <input type="text" name="lastName" required autocomplete="family-name">
-      </label>
+  <!-- REQUIRED FIELDS -->
 
-      <label>
-        Organizational Title
-        <input type="text" name="orgTitle"
-          autocomplete="organization-title"
-          pattern="[A-Za-z\s\-]{7,}">
-      </label>
+  <label>
+    First Name *
+    <input type="text" name="firstName" required autocomplete="given-name" title="First name">
+  </label>
 
-      <label>
-        Email
-        <input type="email" name="email" required autocomplete="email"
-          placeholder="example@email.com">
-      </label>
+  <label>
+    Last Name *
+    <input type="text" name="lastName" required autocomplete="family-name" title="Last name">
+  </label>
 
-      <label>
-        Mobile Phone
-        <input type="tel" name="phone" required autocomplete="tel">
-      </label>
+  <label>
+    Organizational Title
+    <input type="text"
+      name="orgTitle"
+      autocomplete="organization-title"
+      pattern="[A-Za-z\s\-]{7,}"
+      title="Minimum 7 characters. Only letters, spaces, hyphens">
+  </label>
 
-      <label>
-        Organization Name
-        <input type="text" name="organization" required autocomplete="organization">
-      </label>
+  <label>
+    Email *
+    <input type="email" name="email" required autocomplete="email"
+      placeholder="exemplo@email.com">
+  </label>
 
-      <label>
-        Membership Level
-        <select name="membership" required>
-          <option value="">Select</option>
-          <option value="np">NP Membership</option>
-          <option value="bronze">Bronze</option>
-          <option value="silver">Silver</option>
-          <option value="gold">Gold</option>
-        </select>
-      </label>
+  <label>
+    Mobile Phone *
+    <input type="tel" name="phone" required autocomplete="tel">
+  </label>
 
-      <label>
-        Organization Description
-        <textarea name="description"></textarea>
-      </label>
+  <label>
+    Organization Name *
+    <input type="text" name="organization" required autocomplete="organization">
+  </label>
 
-      <input type="hidden" name="timestamp" id="timestamp">
+  <!-- MEMBERSHIP VALUES CORRECT -->
 
-      <input type="submit" value="Apply Now">
+  <label>
+    Membership Level *
+    <select name="membership" required>
+      <option value="">Select</option>
+      <option value="np">NP Membership (Free)</option>
+      <option value="bronze">Bronze</option>
+      <option value="silver">Silver</option>
+      <option value="gold">Gold</option>
+    </select>
+  </label>
 
-    </form>
-  </section>
+  <label>
+    Organization Description
+    <textarea name="description" title="Organization description"></textarea>
+  </label>
 
-  <!-- CARDS -->
-  <section class="cards">
+  <!-- TIMESTAMP -->
+  <input type="hidden" name="timestamp" id="timestamp">
 
-    <div class="card">
-      <h3>NP Membership</h3>
-      <button data-modal="npModal">View</button>
-    </div>
+  <input type="submit" value="Apply Now">
 
-    <div class="card">
-      <h3>Bronze</h3>
-      <button data-modal="bronzeModal">View</button>
-    </div>
+</form>
 
-    <div class="card">
-      <h3>Silver</h3>
-      <button data-modal="silverModal">View</button>
-    </div>
+</section>
 
-    <div class="card">
-      <h3>Gold</h3>
-      <button data-modal="goldModal">View</button>
-    </div>
+<!-- CARDS -->
+<section class="cards">
 
-  </section>
+  <div class="card">
+    <h3>NP Membership</h3>
+    <p>For non-profit organizations</p>
+    <button data-modal="npModal">See Benefits</button>
+  </div>
+
+  <div class="card">
+    <h3>Bronze</h3>
+    <p class="price">$100 / year</p>
+    <p>Basic exposure</p>
+    <button data-modal="bronzeModal">See Benefits</button>
+  </div>
+
+  <div class="card">
+    <h3>Silver</h3>
+    <p class="price">$250 / year</p>
+    <p>Training & visibility</p>
+    <button data-modal="silverModal">See Benefits</button>
+  </div>
+
+  <div class="card highlight">
+    <h3>Gold</h3>
+    <p class="price">$500 / year</p>
+    <p>Maximum exposure</p>
+    <button data-modal="goldModal">See Benefits</button>
+  </div>
+
+</section>
 
 </main>
 
 <!-- MODALS -->
+
 <dialog id="npModal">
-  <p>Free membership for non-profits.</p>
+  <h3>NP Membership</h3>
+  <ul>
+    <li>Free</li>
+    <li>Basic listing</li>
+  </ul>
   <button class="close">Close</button>
 </dialog>
 
 <dialog id="bronzeModal">
-  <p>Basic benefits.</p>
+  <h3>Bronze</h3>
+  <ul>
+    <li>Event access</li>
+    <li>Basic advertising</li>
+  </ul>
   <button class="close">Close</button>
 </dialog>
 
 <dialog id="silverModal">
-  <p>More visibility and training.</p>
+  <h3>Silver</h3>
+  <ul>
+    <li>Training sessions</li>
+    <li>Homepage spotlight</li>
+  </ul>
   <button class="close">Close</button>
 </dialog>
 
 <dialog id="goldModal">
-  <p>Premium exposure.</p>
+  <h3>Gold</h3>
+  <ul>
+    <li>Premium ads</li>
+    <li>Event discounts</li>
+    <li>Top homepage placement</li>
+  </ul>
   <button class="close">Close</button>
 </dialog>
-
 
 <footer>
   <div class="footer-container">
