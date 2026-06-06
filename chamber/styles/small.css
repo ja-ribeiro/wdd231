@@ -217,3 +217,28 @@ input[type="submit"]:hover {
   text-align: center;
   margin-bottom: 1rem;
 }
+
+/* ===== JOIN LAYOUT CORRETO ===== */
+
+/* container controla layout */
+.join-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* desktop */
+@media (min-width: 768px) {
+  .join-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .form-section {
+    flex: 2;
+  }
+
+  .membership-cards {
+    flex: 1;
+  }
+}

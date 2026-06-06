@@ -10,8 +10,8 @@
      <!-- Facebook Open Graph -->
   <meta property="og:title" content="São Paulo Chamber of Commerce">
   <meta property="og:description" content="Discover local businesses, connect with professionals, and explore opportunities in São Paulo's vibrant business community.">
-  <meta property="og:image" content="https://ja-ribeiro.github.io/wdd231/chamber/images/og-image.png">
-  <meta property="og:url" content="https://ja-ribeiro.github.io/wdd231/chamber/directory.html">
+  <meta property="og:image" content="https://ja-ribeiro.github.io/wdd231/chamber/images/og-image.jpg">
+  <meta property="og:url" content="https://ja-ribeiro.github.io/wdd231/chamber/join.html">
 
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico">
@@ -20,6 +20,9 @@
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/large.css">
+
+  <!-- JS-->
+   <script src="scripts/join.js"></script>
 
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,106 +51,111 @@
 
 <main class="join-page">
 
-<section class="form-section">
+  <h1>Join the São Paulo Chamber of Commerce</h1>
 
-<form method="get" action="thankyou.html">
+<div class="join-container">
+  <section class="form-section">
 
-  <!-- REQUIRED FIELDS -->
+  <form method="get" action="thankyou.html">
 
-  <label>
-    First Name *
-    <input type="text" name="firstName" required autocomplete="given-name" title="First name">
-  </label>
+    <!-- REQUIRED FIELDS -->
+    <label>
+      First Name *
+      <input type="text" name="firstName" required autocomplete="given-name" title="First name">
+    </label>
 
-  <label>
-    Last Name *
-    <input type="text" name="lastName" required autocomplete="family-name" title="Last name">
-  </label>
+    <label>
+      Last Name *
+      <input type="text" name="lastName" required autocomplete="family-name" title="Last name">
+    </label>
 
-  <label>
-    Organizational Title
-    <input type="text"
-      name="orgTitle"
-      autocomplete="organization-title"
-      pattern="[A-Za-z\s\-]{7,}"
-      title="Minimum 7 characters. Only letters, spaces, hyphens">
-  </label>
+    <label>
+      Organizational Title
+      <input type="text"
+        name="orgTitle"
+        autocomplete="organization-title"
+        pattern="[A-Za-z\s\-]{7,}"
+        title="Minimum 7 characters. Only letters, spaces, hyphens">
+    </label>
 
-  <label>
-    Email *
-    <input type="email" name="email" required autocomplete="email"
-      placeholder="exemplo@email.com">
-  </label>
+    <label>
+      Email *
+      <input type="email" name="email" required autocomplete="email"
+        placeholder="exemplo@email.com"
+        title="Enter your email address">
+    </label>
 
-  <label>
-    Mobile Phone *
-    <input type="tel" name="phone" required autocomplete="tel">
-  </label>
+    <label>
+      Mobile Phone *
+      <input type="tel" name="phone" required autocomplete="tel"
+      title="Enter your mobile phone number">
+    </label>
 
-  <label>
-    Organization Name *
-    <input type="text" name="organization" required autocomplete="organization">
-  </label>
+    <label>
+      Organization Name *
+      <input type="text" name="organization" required autocomplete="organization"
+      title="Enter your organization name">
+    </label>
 
-  <!-- MEMBERSHIP VALUES CORRECT -->
+    <!-- MEMBERSHIP VALUES CORRECT -->
 
-  <label>
-    Membership Level *
-    <select name="membership" required>
-      <option value="">Select</option>
-      <option value="np">NP Membership (Free)</option>
-      <option value="bronze">Bronze</option>
-      <option value="silver">Silver</option>
-      <option value="gold">Gold</option>
-    </select>
-  </label>
+    <label>
+      Membership Level *
+      <select name="membership" required>
+        <option value="">Select</option>
+        <option value="np">NP Membership (Free)</option>
+        <option value="bronze">Bronze</option>
+        <option value="silver">Silver</option>
+        <option value="gold">Gold</option>
+      </select>
+    </label>
 
-  <label>
-    Organization Description
-    <textarea name="description" title="Organization description"></textarea>
-  </label>
+    <label>
+      Organization Description
+      <textarea name="description" title="Organization description"></textarea>
+    </label>
 
-  <!-- TIMESTAMP -->
-  <input type="hidden" name="timestamp" id="timestamp">
+    <!-- TIMESTAMP -->
+    <input type="hidden" name="timestamp" id="timestamp">
 
-  <input type="submit" value="Apply Now">
+    <input type="submit" value="Apply Now">
 
-</form>
+  </form>
 
-</section>
+  </section>
 
-<!-- CARDS -->
-<section class="membership-cards">
+  <!-- CARDS -->
+  <section class="membership-cards">
 
-  <div class="membership-card">
-    <h3>NP Membership</h3>
-    <p>For non-profit organizations</p>
-    <button data-modal="npModal">See Benefits</button>
-  </div>
+    <div>
+      <h3>NP Membership</h3>
+      <p>For non-profit organizations</p>
+      <button data-modal="npModal">See Benefits</button>
+    </div>
 
-  <div class="card">
-    <h3>Bronze</h3>
-    <p class="price">$100 / year</p>
-    <p>Basic exposure</p>
-    <button data-modal="bronzeModal">See Benefits</button>
-  </div>
+    <div>
+      <h3>Bronze</h3>
+      <p class="price">$100 / year</p>
+      <p>Basic exposure</p>
+      <button data-modal="bronzeModal">See Benefits</button>
+    </div>
 
-  <div class="card">
-    <h3>Silver</h3>
-    <p class="price">$250 / year</p>
-    <p>Training & visibility</p>
-    <button data-modal="silverModal">See Benefits</button>
-  </div>
+    <div>
+      <h3>Silver</h3>
+      <p class="price">$250 / year</p>
+      <p>Training & visibility</p>
+      <button data-modal="silverModal">See Benefits</button>
+    </div>
 
-  <div class="card highlight">
-    <h3>Gold</h3>
-    <p class="price">$500 / year</p>
-    <p>Maximum exposure</p>
-    <button data-modal="goldModal">See Benefits</button>
-  </div>
+    <div>
+      <h3>Gold</h3>
+      <p class="price">$500 / year</p>
+      <p>Maximum exposure</p>
+      <button data-modal="goldModal">See Benefits</button>
+    </div>
 
-</section>
-
+  </section>
+</div>
 </main>
 
 <!-- MODALS -->
@@ -224,10 +232,6 @@
 
   </div>
 </footer>
-
-<script>
-document.getElementById("lastModified").textContent = document.lastModified;
-</script>
 
 </body>
 </html>

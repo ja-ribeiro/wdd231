@@ -9,7 +9,7 @@
   }
 }
 
-@media (min-width: 768px) {
+/**@media (min-width: 768px) {
 
   .join-page {
     display: grid;
@@ -22,4 +22,4 @@
     top: 1rem;
   }
 
-}
+}**/
