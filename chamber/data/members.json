@@ -4,7 +4,7 @@
     "address": "Av. Paulista, 1000",
     "phone": "(11) 4000-1000",
     "website": "https://techpaulista.com",
-    "image": "company.png",
+    "image": "images/company.png",
     "membership": 3,
     "description": "Technology solutions company"
   },
@@ -13,7 +13,7 @@
     "address": "Centro, 200",
     "phone": "(11) 4000-2000",
     "website": "https://cafesp.com",
-    "image": "company.png",
+    "image": "images/company.png",
     "membership": 1,
     "description": "Local coffee shop"
   },
@@ -22,7 +22,7 @@
     "address": "Faria Lima, 300",
     "phone": "(11) 4000-3000",
     "website": "https://spmarketing.com",
-    "image": "company.png",
+    "image": "images/company.png",
     "membership": 2,
     "description": "Marketing agency"
   },
@@ -31,7 +31,7 @@
     "address": "Bela Cintra, 400",
     "phone": "(11) 4000-4000",
     "website": "https://construtorasp.com",
-    "image": "company.png",
+    "image": "images/company.png",
     "membership": 3,
     "description": "Construction company"
   },
@@ -40,7 +40,7 @@
     "address": "Rebouças, 500",
     "phone": "(11) 4000-5000",
     "website": "https://ativa.com",
-    "image": "company.png",
+    "image": "images/company.png",
     "membership": 2,
     "description": "Fitness center"
   },
@@ -49,7 +49,7 @@
     "address": "Shopping Morumbi",
     "phone": "(11) 4000-6000",
     "website": "https://fashion.com",
-    "image": "company.png",
+    "image": "images/company.png",
     "membership": 1,
     "description": "Clothing store"
   },
@@ -58,7 +58,7 @@
     "address": "Marginal Tietê",
     "phone": "(11) 4000-7000",
     "website": "https://logistica.com",
-    "image": "company.png",
+    "image": "images/company.png",
     "membership": 3,
     "description": "Transport company"
   }

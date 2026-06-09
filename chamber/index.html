@@ -21,6 +21,9 @@
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/large.css">
 
+   <!-- JS-->
+   <script src="scripts/home.js"></script>
+
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,8 +49,51 @@
   </div>
 </header>
 
+<!-- HERO -->
+<section class="hero">
+  <img src="images/hero.jpg" alt="São Paulo city">
 
+  <a href="join.html" class="cta-button">Join the Chamber</a>
+</section>
 
+<main>
+
+  <h2>Home</h2>
+
+  <!-- TOP GRID -->
+  <section class="top-sections">
+
+    <!-- EVENTS -->
+    <div class="events">
+      <h3>Events</h3>
+      <p>Business Networking - June 15</p>
+      <p>Startup Meetup - June 20</p>
+    </div>
+
+    <!-- WEATHER -->
+    <div class="weather">
+      <h3>Current Weather</h3>
+      <p id="temp"></p>
+      <p id="desc"></p>
+    </div>
+
+    <!-- FORECAST -->
+    <div class="forecast">
+      <h3>Forecast</h3>
+      <p id="day1"></p>
+      <p id="day2"></p>
+      <p id="day3"></p>
+    </div>
+
+  </section>
+
+  <!-- SPOTLIGHT -->
+  <section>
+    <h2>Business Spotlights</h2>
+    <div id="spotlights" class="spotlight-container"></div>
+  </section>
+
+</main>
 
 <footer>
   <div class="footer-container">

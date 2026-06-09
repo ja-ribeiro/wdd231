@@ -242,3 +242,72 @@ input[type="submit"]:hover {
     flex: 1;
   }
 }
+
+/* HERO */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.cta-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: #70000b;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+/* TOP GRID */
+.top-sections {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.events, .weather, .forecast {
+  background: #eee;
+  padding: 1rem;
+}
+
+/* SPOTLIGHT */
+.spotlight-container {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.spotlight-card {
+  background: white;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.spotlight-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .top-sections {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  .spotlight-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
