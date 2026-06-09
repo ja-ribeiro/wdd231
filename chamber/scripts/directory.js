@@ -2,6 +2,8 @@ const container = document.getElementById("members");
 const url = "data/members.json";
 
 async function getMembers() {
+  if (!container) return;
+
   const response = await fetch(url);
   const data = await response.json();
   displayMembers(data);
@@ -29,16 +31,26 @@ function displayMembers(members) {
 getMembers();
 
 // BOTÕES
-document.getElementById("gridBtn").onclick = () => {
-  container.classList.add("grid");
-  container.classList.remove("list");
-};
+const gridBtn = document.getElementById("gridBtn");
+const listBtn = document.getElementById("listBtn");
 
-document.getElementById("listBtn").onclick = () => {
-  container.classList.add("list");
-  container.classList.remove("grid");
-};
+if (gridBtn && listBtn && container) {
+  gridBtn.onclick = () => {
+    container.classList.add("grid");
+    container.classList.remove("list");
+  };
+
+  listBtn.onclick = () => {
+    container.classList.add("list");
+    container.classList.remove("grid");
+  };
+}
 
 // FOOTER
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = document.lastModified;
+const yearDir = document.getElementById("year");
+const lastModifiedDir = document.getElementById("lastModified");
+
+if (yearDir && lastModifiedDir) {
+  yearDir.textContent = new Date().getFullYear();
+  lastModifiedDir.textContent = document.lastModified;
+}
