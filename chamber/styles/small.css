@@ -358,3 +358,21 @@ input[type="submit"]:hover {
   position: absolute;
   left: -9999px;
 }
+
+/* =========================
+   MOBILE MENU BUTTON
+========================= */
+
+#menuBtn {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* esconder menu no mobile */
+#menu.hide {
+  display: none;
+}
