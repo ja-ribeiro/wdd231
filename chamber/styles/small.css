@@ -344,21 +344,33 @@ input[type="submit"]:hover {
 /* CARD (ISOLADO DO DIRECTORY) */
 .discover-card {
   background: white;
+  min-height: 420px;
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .discover-card img {
   width: 100%;
-  height: auto;
+  height: 100%;
   aspect-ratio: 3 / 2;
   object-fit: cover;
   display: block;
 }
 
+.discover-card figure {
+  margin: 0;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute;
   left: -9999px;
+}
+
+.discover-grid {
+  min-height: 2000px;
 }
 
 /* =========================

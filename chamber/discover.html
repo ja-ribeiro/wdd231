@@ -17,12 +17,9 @@
   <link rel="icon" href="images/favicon.ico">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="preload" href="styles/small.css" as="style">
-  <link rel="stylesheet" href="styles/small.css">
-
-  <link rel="preload" href="styles/large.css" as="style">
-  <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
 
   <!-- JS-->
    <script type="module" src="scripts/discover.js"></script>
@@ -31,17 +28,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+</noscript>
 
-  <!-- (melhora LCP) -->
-<link rel="preload" as="image" href="images/ibirapuera.webp">
 </head>
 <body>
 
 <header>
   <div class="header-container">
     
-    <img src="images/favicon.ico" alt="favicon" class="favicon">
+   <img src="images/favicon.ico" alt="favicon" class="favicon" width="40" height="40">
 
     <!-- BOTÃO MOBILE -->
     <button id="menuBtn">☰</button>
@@ -84,15 +82,15 @@
     <div class="social">
 
     <a href="https://youtube.com" target="_blank">
-        <img src="images/youtube.png" alt="YouTube">
+        <img src="images/youtube.png" alt="YouTube"  width="50" height="50">
     </a>
 
     <a href="https://x.com" target="_blank">
-        <img src="images/twitter.png" alt="X (Twitter)">
+        <img src="images/twitter.png" alt="X (Twitter)"  width="50" height="50">
     </a>
 
     <a href="https://linkedin.com" target="_blank">
-        <img src="images/linkedin.png" alt="LinkedIn">
+        <img src="images/linkedin.png" alt="LinkedIn"  width="50" height="50"> 
     </a>
 
     </div>
