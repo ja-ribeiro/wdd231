@@ -350,8 +350,10 @@ input[type="submit"]:hover {
 
 .discover-card img {
   width: 100%;
-  height: 200px;
+  height: auto;
+  aspect-ratio: 3 / 2;
   object-fit: cover;
+  display: block;
 }
 
 .visually-hidden {

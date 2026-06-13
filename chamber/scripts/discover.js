@@ -5,13 +5,23 @@ const container = document.getElementById("cards-container");
 // CREATE CARDS
 places.forEach((place, index) => {
   const card = document.createElement("section");
-  card.classList.add("card");
+
+  card.classList.add("discover-card");
+
   card.style.gridArea = `card${index + 1}`;
 
   card.innerHTML = `
     <h2>${place.name}</h2>
     <figure>
-      <img src="${place.image}" alt="${place.name}" loading="lazy" width="300" height="200">
+      <img 
+        src="${place.image}" 
+        alt="${place.name}" 
+        width="300" 
+        height="200"
+        loading="${index === 0 ? "eager" : "lazy"}"
+        fetchpriority="${index === 0 ? "high" : "auto"}"
+        decoding="async"
+      >
     </figure>
     <address>${place.address}</address>
     <p>${place.description}</p>
@@ -22,7 +32,7 @@ places.forEach((place, index) => {
 });
 
 
-// LOCAL STORAGE MESSAGE (PERFEITO)
+// LOCAL STORAGE MESSAGE
 const visitMessage = document.getElementById("visit-message");
 const lastVisit = localStorage.getItem("lastVisit");
 const now = Date.now();
@@ -32,13 +42,12 @@ if (!lastVisit) {
 } else {
   const days = Math.floor((now - lastVisit) / (1000 * 60 * 60 * 24));
 
-  if (days < 1) {
-    visitMessage.textContent = "Back so soon! Awesome!";
-  } else if (days === 1) {
-    visitMessage.textContent = "You last visited 1 day ago.";
-  } else {
-    visitMessage.textContent = `You last visited ${days} days ago.`;
-  }
+  visitMessage.textContent =
+    days < 1
+      ? "Back so soon! Awesome!"
+      : days === 1
+      ? "You last visited 1 day ago."
+      : `You last visited ${days} days ago.`;
 }
 
 localStorage.setItem("lastVisit", now);
@@ -49,10 +58,12 @@ document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
 
 
-// MOBILE MENU (RESPONSIVO)
+// MOBILE MENU (SEGURO)
 const menuBtn = document.getElementById("menuBtn");
 const menu = document.getElementById("menu");
 
-menuBtn.addEventListener("click", () => {
-  menu.classList.toggle("hide");
-});
+if (menuBtn && menu) {
+  menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("hide");
+  });
+}
