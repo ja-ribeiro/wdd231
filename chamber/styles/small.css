@@ -339,6 +339,7 @@ input[type="submit"]:hover {
     "card8";
   gap: 1rem;
   padding: 1rem;
+  min-height: 2000px;
 }
 
 /* CARD (ISOLADO DO DIRECTORY) */
@@ -368,11 +369,7 @@ input[type="submit"]:hover {
   position: absolute;
   left: -9999px;
 }
-
-.discover-grid {
-  min-height: 2000px;
-}
-
+  
 /* =========================
    MOBILE MENU BUTTON
 ========================= */
