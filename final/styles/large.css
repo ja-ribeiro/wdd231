@@ -1,0 +1,78 @@
+/* ========================= */
+/* 💻 DESKTOP VIEW */
+/* ========================= */
+
+@media (min-width: 768px) {
+
+  /* NAV */
+  nav {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    width: auto;
+  }
+
+  nav a {
+    border: none;
+    margin-left: 20px;
+  }
+
+  #menu-btn {
+    display: none;
+  }
+
+  /* HERO */
+  .hero {
+    height: 70vh;
+  }
+
+  .hero-text {
+    max-width: 500px;
+  }
+
+  /* CAROUSEL CENTRALIZADO */
+  .carousel {
+    justify-content: center;
+  }
+
+  /* MENU GRID */
+  .menu-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* GALLERY */
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* HOVER EFFECT */
+  .card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+  }
+
+  .item:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+
+    .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .footer-brand {
+    max-width: 300px;
+  }
+
+  .footer-contact {
+    text-align: center;
+  }
+
+  .footer-social {
+    text-align: right;
+  }
+}   
