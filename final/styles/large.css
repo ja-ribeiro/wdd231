@@ -60,4 +60,31 @@
     transform: scale(1.05);
     transition: 0.3s;
   }
+
+  /*BEBIDAS ASSINATURA*/
+  .signature-grid {
+  gap: 30px;
+}
+
+.sig-card {
+  width: 180px;
+}
+
+.sig-card img {
+  height: 160px;
+}
+
+.sig-card.featured {
+  width: 220px;
+}
+
+/*GRID MENU*/
+.menu-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* deixa tudo cabendo na tela */
+.card img {
+  height: 160px;
+}
 }
