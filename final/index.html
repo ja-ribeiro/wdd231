@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project - WDD231, Juliana Alves Ribeiro</title>
-    <meta name="description" content="">
-    <meta name="author" content="Juliana Alves Ribeiro">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--ADICIONE AQUELAS META TAGS AQUI E LEMBRE DE ARRUMAR AS OUTRAS PAGINAS TAMBEM-->
+<title>CoffeeSpot</title>
 
-<link rel="stylesheet" href="styles.css">
-<link rel="icon" href="images/favicon.ico">
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/large.css">
 
+<script defer src="scripts/script.js"></script>
 </head>
+
 <body>
 
 <header class="header">
@@ -34,77 +33,54 @@
   </div>
 </section>
 
+<section class="about">
+  <h2>Our Story</h2>
+  <p>We started as a small coffee shop focused on quality and comfort.</p>
+</section>
+
 <section class="carousel-section">
   <h2>Featured Drinks</h2>
 
   <div class="carousel">
     <button class="prev">❮</button>
 
-    <div class="carousel-track">
-      <div class="item">
-        <img src="https://picsum.photos/300?1" alt="Cappuccino">
-        <p>Cappuccino</p>
-      </div>
+    <div class="carousel-window">
+      <div class="carousel-track">
 
-      <div class="item">
-        <img src="https://picsum.photos/300?2" alt="Latte">
-        <p>Latte</p>
-      </div>
+        <!-- VOCE VAI TROCAR AS IMAGENS -->
+        <div class="item"><img src="images/img1.jpg"></div>
+        <div class="item"><img src="images/img2.jpg"></div>
+        <div class="item"><img src="images/img3.jpg"></div>
+        <div class="item"><img src="images/img4.jpg"></div>
+        <div class="item"><img src="images/img5.jpg"></div>
+        <div class="item"><img src="images/img6.jpg"></div>
+        <div class="item"><img src="images/img7.jpg"></div>
+        <div class="item"><img src="images/img8.jpg"></div>
 
-      <div class="item">
-        <img src="https://picsum.photos/300?3" alt="Iced Coffee">
-        <p>Iced Coffee</p>
-      </div>
-
-      <div class="item">
-        <img src="https://picsum.photos/300?4" alt="Mocha">
-        <p>Mocha</p>
       </div>
     </div>
 
     <button class="next">❯</button>
   </div>
-
 </section>
 
 </main>
-<footer class="footer">
 
+<footer class="footer">
   <div class="footer-container">
 
-    <!-- LOGO / NOME -->
     <div class="footer-brand">
       <h2>CoffeeSpot</h2>
-      <p>Brewing happiness, one cup at a time ☕</p>
+      <p>Brewing happiness ☕</p>
     </div>
 
-    <!-- CONTATO -->
     <div class="footer-contact">
-      <h3>Contact</h3>
       <p>📍 123 Coffee Street</p>
       <p>📞 (11) 99999-9999</p>
-      <p>✉️ contact@coffeespot.com</p>
-    </div>
-
-    <!-- REDES SOCIAIS -->
-    <div class="footer-social">
-      <h3>Follow Us</h3>
-      <a href="#" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="#" aria-label="Twitter">
-        <i class="fab fa-twitter"></i>
-      </a>
     </div>
 
   </div>
-
-  <div class="footer-bottom">
-    <p>© 2026 CoffeeSpot. All rights reserved.</p>
-  </div>
-
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>

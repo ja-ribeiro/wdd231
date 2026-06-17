@@ -1,5 +1,5 @@
 /* ========================= */
-/* 💻 DESKTOP VIEW */
+/* 💻 DESKTOP */
 /* ========================= */
 
 @media (min-width: 768px) {
@@ -26,26 +26,31 @@
     height: 70vh;
   }
 
-  .hero-text {
-    max-width: 500px;
-  }
-
-  /* CAROUSEL CENTRALIZADO */
-  .carousel {
-    justify-content: center;
-  }
-
   /* MENU GRID */
   .menu-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  /* GALLERY */
-  .gallery-grid {
-    grid-template-columns: repeat(3, 1fr);
+  /* DETAILS */
+  .details-top {
+    flex-direction: row;
+    align-items: center;
   }
 
-  /* HOVER EFFECT */
+  .details-top img {
+    width: 400px;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    text-align: left;
+  }
+
+  /* HOVER */
   .card:hover {
     transform: translateY(-5px);
     transition: 0.3s;
@@ -55,24 +60,4 @@
     transform: scale(1.05);
     transition: 0.3s;
   }
-
-    .footer-container {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-    max-width: 1000px;
-    margin: auto;
-  }
-
-  .footer-brand {
-    max-width: 300px;
-  }
-
-  .footer-contact {
-    text-align: center;
-  }
-
-  .footer-social {
-    text-align: right;
-  }
-}   
+}
