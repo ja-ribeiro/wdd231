@@ -253,7 +253,7 @@ nav a {
 
 .gallery-viewer img {
   width: 100%;
-  aspect-ratio: 1 / 1; /* Mantém o formato quadrado perfeito das fotos */
+  aspect-ratio: 1 / 1; /* Mantém o formato quadrado */
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
