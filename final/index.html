@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoffeeSpot - Experience the Perfect Coffee</title>
+  <meta name="description" content="Welcome to CoffeeSpot! Experience premium drinks, a cozy atmosphere, and our unforgettable signature coffees in a welcoming space.">
+  <meta name="author" content="Juliana Alves Ribeiro">  
+ 
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CoffeeSpot - Experience the Perfect Coffee">
+  <meta property="og:description" content="Cozy atmosphere, premium drinks, and an unforgettable taste. Check out our menu, location, and open hours!">
+  <meta property="og:url" content="http://ja-ribeiro.github.io/wdd231/final/index.html">
+  <meta property="og:image" content="https://ja-ribeiro.github.io/wdd231/final/images/hero.png">
+  <meta property="og:image:alt" content="Inside view of CoffeeSpot cozy atmosphere with fresh coffee and pastries">
+  <meta property="og:site_name" content="CoffeeSpot">
 
-<title>CoffeeSpot</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
 
-<link rel="stylesheet" href="styles/small.css">
-<link rel="stylesheet" href="styles/large.css">
+  <!--JS-->
+  <script defer src="scripts/script.js"></script>
 
-<script defer src="scripts/script.js"></script>
+  <!--Favicon-->
+  <link rel="icon" href="images/favicon.ico">
 </head>
 
 <body>
 
 <header class="header">
-
-   <!-- Favicon -->
-  <link rel="icon" href="images/favicon.ico">
-
   <h1>CoffeeSpot</h1>
-  <button id="menu-btn">☰</button>
+  <button id="menu-btn" aria-label="Open Menu">☰</button>
   <nav id="nav">
     <a href="index.html">Home</a>
     <a href="menu.html">Menu</a>
@@ -39,7 +49,12 @@
 
 <section class="about">
   <h2>Our Story</h2>
-  <p>We started as a small coffee shop focused on quality and comfort.</p>
+  <p>CoffeeSpot was born from a simple dream: to create a cozy sanctuary in the midst of a busy routine. 
+    It all started in a small garage, where the aroma of fresh coffee and a passion for welcoming people inspired us 
+    to open our doors.</p>
+
+  <p>Today, we keep the exact same essence from day one: carefully selected beans, dedication to our craft, 
+    and an atmosphere that makes you feel right at home.</p>
 </section>
 
 <section class="signature">
@@ -48,17 +63,17 @@
   <div class="signature-grid">
 
     <div class="sig-card">
-      <img src="images/cappuccino.png" alt="Cappuccino">
+      <img src="images/cappuccino.jpg" alt="A hot cup of creamy cappuccino" loading="lazy" width="300" height="300">
       <h3>Cappuccino</h3>
     </div>
 
     <div class="sig-card featured">
-      <img src="images/mocha.png" alt="Mocha">
+      <img src="images/mocha.jpg" alt="Our premium Mocha Deluxe with chocolate drizzle" loading="lazy" width="300" height="300">
       <h3>Mocha Deluxe</h3>
     </div>
 
     <div class="sig-card">
-      <img src="images/latte.png" alt="Latte">
+      <img src="images/latte.jpg" alt="Caramel Latte with layered milk and espresso" loading="lazy" width="300" height="300">
       <h3>Caramel Latte</h3>
     </div>
 

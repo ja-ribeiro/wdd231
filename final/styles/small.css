@@ -64,7 +64,10 @@ nav a {
 /* ================= HERO ================= */
 .hero {
   height: 60vh;
-  background: url('../images/hero.jpg') center/cover;
+  background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('../images/hero.jpg') center/cover no-repeat;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -129,45 +132,6 @@ nav a {
   transform: scale(1.15);
 }
 
-/* ================= CAROUSEL ================= */
-.carousel {
-  display: flex;
-  align-items: center;
-  padding: 1rem;
-  gap: 10px;
-}
-
-.carousel button {
-  background: var(--primary);
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.carousel-window {
-  overflow: hidden;
-  width: 100%;
-}
-
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.item {
-  flex: 0 0 25%; /* 4 imagens visíveis */
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.item img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 12px;
-}
 
 /* ================= MENU ================= */
 .tabs {
@@ -219,13 +183,49 @@ nav a {
 .details-top {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 1rem;
+  gap: 24px;
+  padding: 1.5rem 1rem;
 }
 
-.details-top img {
+.map-container {
   width: 100%;
-  border-radius: 10px;
+}
+
+.map-container img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Força o mapa a ficar perfeitamente quadrado como a nova imagem */
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-card {
+  background: white;
+  padding: 1.2rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.info-card h2, .info-card h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+.info-card p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  color: #555;
 }
 
 /* ================= GALLERY ================= */
@@ -241,13 +241,110 @@ nav a {
   border-radius: 10px;
 }
 
-/* ================= REVIEWS ================= */
+/* ================= GALLERY ================= */
+.gallery-container {
+  padding: 1rem;
+}
+
+.gallery-viewer {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.gallery-viewer img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Mantém o formato quadrado perfeito das fotos */
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: opacity 0.3s ease;
+}
+
+.gallery-thumbs {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto; /* Permite arrastar para o lado no celular */
+  padding-bottom: 10px;
+  scrollbar-width: thin; /* Barra de rolagem discreta */
+}
+
+.thumb {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  flex-shrink: 0; /* Impede que as imagens amassem no mobile */
+}
+
+/* Efeito para a miniatura selecionada */
+.thumb.active, .thumb:hover {
+  opacity: 1;
+  border-color: var(--primary);
+  transform: scale(1.05);
+}
+
+/* ================= REVIEWS & FORM ================= */
+.reviews-section {
+  padding: 1.5rem 1rem;
+}
+
 .review {
   background: white;
-  padding: 10px;
-  margin: 10px;
+  padding: 12px 15px;
+  margin-bottom: 12px;
   border-left: 4px solid var(--primary);
   border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+}
+
+.review p {
+  margin: 0;
+}
+
+.review-form-container {
+  background: var(--secondary);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+.review-form-container h3 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+#review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#review-form input, #review-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+#review-form button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#review-form button:hover {
+  background: #132521;
 }
 
 /* ================= FOOTER ================= */

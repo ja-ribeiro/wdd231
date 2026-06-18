@@ -87,4 +87,50 @@
 .card img {
   height: 160px;
 }
+
+/* GALLERY DESKTOP */
+  .gallery-container {
+    max-width: 600px; /* Limita o tamanho máximo no desktop para não estourar */
+    margin: 0 auto;
+  }
+
+  .gallery-thumbs {
+    overflow-x: visible; /* Remove a rolagem lateral no desktop */
+    flex-wrap: wrap; /* Faz as miniaturas quebrarem a linha se necessário */
+    justify-content: center;
+  }
+
+  .thumb {
+    width: 60px; /* Ajusta o tamanho para caberem todas alinhadas */
+    height: 60px;
+  }
+
+  /* DETAILS DESKTOP */
+  .details-top {
+    flex-direction: row;
+    align-items: stretch; /* Faz as duas colunas terem exatamente a mesma altura */
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 40px;
+  }
+
+  .map-container {
+    flex: 1; /* Ocupa metade do espaço disponível */
+  }
+
+  .map-container img {
+    width: 100%;
+    max-width: 450px; /* Evita que o mapa fique gigante em telas muito largas */
+    height: 100%; /* Garante que preencha a altura combinada dos blocos ao lado */
+  }
+
+  .info-container {
+    flex: 1; /* Ocupa a outra metade do espaço disponível */
+    justify-content: center; /* Centraliza verticalmente em relação ao mapa */
+    gap: 20px;
+  }
+  
+  .info-card {
+    padding: 1.5rem; /* Um pouco mais de respiro no desktop */
+  }
 }

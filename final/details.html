@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoffeeSpot - <Details></Details></title>
+  <meta name="description" content="Welcome to CoffeeSpot! Experience premium drinks, a cozy atmosphere, and our unforgettable signature coffees in a welcoming space.">
+  <meta name="author" content="Juliana Alves Ribeiro">  
+ 
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CoffeeSpot - Experience the Perfect Coffee">
+  <meta property="og:description" content="Cozy atmosphere, premium drinks, and an unforgettable taste. Check out our menu, location, and open hours!">
+  <meta property="og:url" content="http://ja-ribeiro.github.io/wdd231/final/index.html">
+  <meta property="og:image" content="https://ja-ribeiro.github.io/wdd231/final/images/hero.png">
+  <meta property="og:image:alt" content="Inside view of CoffeeSpot cozy atmosphere with fresh coffee and pastries">
+  <meta property="og:site_name" content="CoffeeSpot">
 
-<title>Details</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
 
-<link rel="stylesheet" href="styles/small.css">
-<link rel="stylesheet" href="styles/large.css">
+  <!--JS-->
+  <script defer src="scripts/script.js"></script>
 
-<script defer src="scripts/script.js"></script>
+  <!--Favicon-->
+  <link rel="icon" href="images/favicon.ico">
 </head>
 
 <body>
 
 <header class="header">
-  <h1>Details</h1>
-  <button id="menu-btn">☰</button>
+  <h1>CoffeeSpot</h1>
+  <button id="menu-btn" aria-label="Open Menu">☰</button>
   <nav id="nav">
     <a href="index.html">Home</a>
     <a href="menu.html">Menu</a>
@@ -26,34 +40,82 @@
 
 <main>
 
+<h1>Where to find us</h1>
+
 <section class="details-top">
-  <img src="images/store.jpg">
+  <div class="map-container">
+    <img src="images/map.jpg" alt="Map showing The CoffeeSpot location" fetchpriority="high" width="600" height="400">
+  </div>
 
-  <div>
-    <h2>Location</h2>
-    <p>123 Coffee Street</p>
+  <div class="info-container">
+    <div class="info-card">
+      <span class="info-icon">📍</span>
+      <div>
+        <h2>Location</h2>
+        <p>100 Arabica Ave, Brewersville, BV1 1CS</p>
+      </div>
+    </div>
 
-    <h3>Hours</h3>
-    <p>Mon-Fri: 8am - 8pm</p>
+    <div class="info-card">
+      <span class="info-icon">🕒</span>
+      <div>
+        <h3>Opening Hours</h3>
+        <p><strong>Mon - Fri:</strong> 7:00 AM - 7:00 PM</p>
+        <p><strong>Sat - Sun:</strong> 8:00 AM - 5:00 PM</p>
+      </div>
+    </div>
   </div>
 </section>
 
-<section>
+<section class="gallery-container">
   <h2>Our Space</h2>
 
-  <div class="slider">
-    <img src="images/space1.jpg">
-    <img src="images/space2.jpg">
-    <img src="images/space3.jpg">
+  <div class="gallery-viewer">
+    <img id="main-photo" src="images/space1.jpg" alt="Featured space view" loading="lazy" width="800" height="500">
+  </div>
+
+  <div class="gallery-thumbs">
+    <img src="images/space1.jpg" class="thumb active" alt="Cafe view 1" loading="lazy" width="100" height="70">
+    <img src="images/space2.jpg" class="thumb" alt="Cafe view 2" loading="lazy" width="100" height="70">
+    <img src="images/space3.jpg" class="thumb" alt="Cafe view 3" loading="lazy" width="100" height="70">
+    <img src="images/space4.jpg" class="thumb" alt="Cafe view 4" loading="lazy" width="100" height="70">
+    <img src="images/space5.jpg" class="thumb" alt="Cafe view 5" loading="lazy" width="100" height="70">
+    <img src="images/space6.jpg" class="thumb" alt="Cafe view 6" loading="lazy" width="100" height="70">
+    <img src="images/space7.jpg" class="thumb" alt="Cafe view 7" loading="lazy" width="100" height="70">
+    <img src="images/space8.jpg" class="thumb" alt="Cafe view 8" loading="lazy" width="100" height="70">
   </div>
 </section>
 
-<section>
+<section class="reviews-section">
   <h2>Customer Reviews</h2>
+  
   <div id="reviews"></div>
+
+  <div class="review-form-container">
+    <h3>Leave a Review</h3>
+    <form id="review-form">
+      <input type="text" id="reviewer-name" placeholder="Your Name" required>
+      <textarea id="reviewer-comment" placeholder="Your Comment" rows="3" required></textarea>
+      <button type="submit">Submit Review</button>
+    </form>
+  </div>
 </section>
 
 </main>
+<footer class="footer">
+  <div class="footer-container">
 
+    <div class="footer-brand">
+      <h2>CoffeeSpot</h2>
+      <p>Brewing happiness ☕</p>
+    </div>
+
+    <div class="footer-contact">
+      <p>📍 123 Coffee Street</p>
+      <p>📞 (11) 99999-9999</p>
+    </div>
+
+  </div>
+</footer>
 </body>
 </html>

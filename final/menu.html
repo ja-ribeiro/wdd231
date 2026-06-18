@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoffeeSpot - Menu</title>
+  <meta name="description" content="Welcome to CoffeeSpot! Experience premium drinks, a cozy atmosphere, and our unforgettable signature coffees in a welcoming space.">
+  <meta name="author" content="Juliana Alves Ribeiro">  
+ 
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CoffeeSpot - Experience the Perfect Coffee">
+  <meta property="og:description" content="Cozy atmosphere, premium drinks, and an unforgettable taste. Check out our menu, location, and open hours!">
+  <meta property="og:url" content="http://ja-ribeiro.github.io/wdd231/final/index.html">
+  <meta property="og:image" content="https://ja-ribeiro.github.io/wdd231/final/images/hero.png">
+  <meta property="og:image:alt" content="Inside view of CoffeeSpot cozy atmosphere with fresh coffee and pastries">
+  <meta property="og:site_name" content="CoffeeSpot">
 
-<title>Menu</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
 
-<link rel="stylesheet" href="styles/small.css">
-<link rel="stylesheet" href="styles/large.css">
+  <!--JS-->
+  <script defer src="scripts/script.js"></script>
 
-<script defer src="scripts/script.js"></script>
+  <!--Favicon-->
+  <link rel="icon" href="images/favicon.ico">
 </head>
 
 <body>
 
 <header class="header">
-  <h1>Menu</h1>
-  <button id="menu-btn">☰</button>
+  <h1>CoffeeSpot</h1>
+  <button id="menu-btn" aria-label="Open Menu">☰</button>
   <nav id="nav">
     <a href="index.html">Home</a>
     <a href="menu.html">Menu</a>
@@ -26,53 +40,97 @@
 
 <main>
 
+<h1>Our Menu</h1>
+
 <section class="menu-section">
+  <h2 class="visually-hidden">Explore our Products</h2>
 
-<div class="tabs">
-  <button data-filter="all">All</button>
-  <button data-filter="drink">Drinks</button>
-  <button data-filter="food">Food</button>
-</div>
+  <div class="tabs">
+    <button data-filter="all">All</button>
+    <button data-filter="drink">Drinks</button>
+    <button data-filter="food">Food</button>
+  </div>
 
-<div class="menu-grid">
-<!--Food-->
-<div class="card drink"><h3>Latte</h3><p>Milk + Espresso</p>
-    <img src="images/latte.png" alt="Latte">"</div>
+  <div class="menu-grid">
+    <div class="card drink">
+      <h3>Latte</h3>
+      <p>Milk + Espresso</p>
+      <img src="images/latte.jpg" alt="A hot cup of Latte coffee" fetchpriority="high" width="200" height="200">
+    </div>
 
-<div class="card drink"><h3>Cappuccino</h3><p>Foam + Espresso</p>
-    <img src="images/cappuccino.png" alt="Cappuccino"></div>
+    <div class="card drink">
+      <h3>Cappuccino</h3>
+      <p>Foam + Espresso</p>
+      <img src="images/cappuccino.jpg" alt="Cappuccino with foam" loading="lazy" width="200" height="200">
+    </div>
 
-<div class="card drink"><h3>Mocha</h3><p>Chocolate + Coffee</p>
-    <img src="images/mocha.png" alt="Mocha"></div>
+    <div class="card drink">
+      <h3>Mocha</h3>
+      <p>Chocolate + Coffee</p>
+      <img src="images/mocha.jpg" alt="Mocha coffee with chocolate syrup" loading="lazy" width="200" height="200">
+    </div>
 
-<div class="card drink"><h3>Cold Brew</h3><p>Cold coffee</p>
-    <img src="images/cold-brew.png" alt="Cold Brew"></div>
+    <div class="card drink">
+      <h3>Cold Brew</h3>
+      <p>Cold coffee</p>
+      <img src="images/cold-brew.jpg" alt="Glass of iced cold brew coffee" loading="lazy" width="200" height="200">
+    </div>
 
-<div class="card drink"><h3>Espresso</h3><p>Strong shot</p>
-    <img src="images/espresso.png" alt="Espresso"></div>
+    <div class="card drink">
+      <h3>Espresso</h3>
+      <p>Strong shot</p>
+      <img src="images/espresso.jpg" alt="A single shot of espresso" loading="lazy" width="200" height="200">
+    </div>
 
+    <div class="card food">
+      <h3>Croissant</h3>
+      <p>Buttery pastry</p>
+      <img src="images/croissant.jpg" alt="Freshly baked buttery croissant" loading="lazy" width="200" height="200">
+    </div>
 
-<!--Drink-->
-<div class="card food"><h3>Croissant</h3><p>Buttery pastry</p>
-    <img src="images/croissant.png" alt="Croissant"></div>
+    <div class="card food">
+      <h3>Sandwich</h3>
+      <p>Ham & Cheese</p>
+      <img src="images/sandwich.jpg" alt="Toasted ham and cheese sandwich" loading="lazy" width="200" height="200">
+    </div>
 
-<div class="card food"><h3>Sandwich</h3><p>Ham & Cheese</p>
-    <img src="images/sandwich.png" alt="Sandwich"></div>
+    <div class="card food">
+      <h3>Cake</h3>
+      <p>Chocolate cake</p>
+      <img src="images/cake.jpg" alt="A slice of delicious chocolate cake" loading="lazy" width="200" height="200">
+    </div>
 
-<div class="card food"><h3>Cake</h3><p>Chocolate cake</p>
-    <img src="images/cake.png" alt="Cake"></div>
+    <div class="card food">
+      <h3>Pão de queijo</h3>
+      <p>Cheese bread</p>
+      <img src="images/pao.jpg" alt="Traditional Brazilian cheese bread" loading="lazy" width="200" height="200">
+    </div>
 
-<div class="card food"><h3>Pão de queijo</h3><p>Cheese bread</p>
-    <img src="images/pao.png" alt="Pao de Queijo"></div>
-
-<div class="card food"><h3>Toast</h3><p>Avocado toast</p>
-    <img src="images/toast.png" alt="Toast"></div>
-
-</div>
-
+    <div class="card food">
+      <h3>Toast</h3>
+      <p>Avocado toast</p>
+      <img src="images/toast.jpg" alt="Avocado toast on whole grain bread" loading="lazy" width="200" height="200">
+    </div>
+  </div>
 </section>
 
 </main>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <h2>CoffeeSpot</h2>
+      <p>Brewing happiness ☕</p>
+    </div>
+
+    <div class="footer-contact">
+      <p>📍 123 Coffee Street</p>
+      <p>📞 (11) 99999-9999</p>
+    </div>
+
+  </div>
+</footer>
 
 </body>
 </html>
